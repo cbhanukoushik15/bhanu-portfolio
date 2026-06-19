@@ -16,8 +16,8 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-cyan-400 text-lg mb-4">
-            Hello, I'm
+          <p className="text-cyan-400 text-lg mb-4 tracking-widest uppercase">
+               Welcome To My Portfolio
           </p>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
@@ -25,15 +25,32 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-            Data Analyst | Power BI Developer
+            Data Analyst | Power BI Developer | Business Analyst
           </h2>
 
-          <p className="text-gray-400 leading-relaxed max-w-xl">
-            Transforming data into actionable insights through
-            Power BI, SQL, Excel and Python.
-          </p>
+          <p className="text-gray-400 leading-relaxed max-w-xl text-lg">
+  Turning raw data into meaningful business insights through
+  analytics, visualization and data-driven decision making.
+</p>
+<div className="flex flex-wrap gap-3 mt-6">
 
-          <div className="mt-8 flex flex-wrap gap-4">
+  {[
+    "Power BI",
+    "SQL",
+    "Excel",
+    "Python",
+    "Business Analysis",
+  ].map((skill) => (
+    <span
+      key={skill}
+      className="px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-sm"
+    >
+      {skill}
+    </span>
+  ))}
+
+</div>
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="https://linkedin.com/in/cbhanukoushik15"
               target="_blank"
@@ -41,13 +58,19 @@ export default function Hero() {
             >
               LinkedIn
             </a>
-
             <a
               href="https://github.com/cbhanukoushik15"
               target="_blank"
-              className="border border-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-500/10 transition"
+              className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
             >
               GitHub
+            </a>
+            <a
+              href="#projects"
+             target="_blank"
+             className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
+             >
+               View Projects
             </a>
           </div>
         </motion.div>

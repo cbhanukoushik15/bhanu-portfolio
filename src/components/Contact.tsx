@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="max-w-5xl w-full">
 
         <p className="text-cyan-400 mb-2">
-          06
+          07
         </p>
 
         <h2 className="text-6xl font-bold mb-12">
@@ -32,7 +32,7 @@ export default function Contact() {
 
               <div className="flex items-center gap-4">
                 <Mail className="text-cyan-400" />
-                <span>cbhanukoushik15@gmail.com</span>
+                <span>cbhanukoushik@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-4">
@@ -83,7 +83,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="/resume.pdf"
+              href="/resumes.pdf"
               download
               className="bg-cyan-500 text-black font-semibold px-6 py-3 rounded-xl text-center hover:scale-105 transition"
             >

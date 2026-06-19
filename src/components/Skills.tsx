@@ -1,38 +1,63 @@
 "use client";
 
-import { motion } from "framer-motion";
-
-const skillGroups = [
+const skillCategories = [
   {
-    title: "Analytics",
-    skills: ["Power BI", "SQL", "Excel", "Python"],
+    title: "Data Analytics",
+    skills: [
+      "Power BI",
+      "SQL",
+      "Excel",
+      "Python",
+    ],
   },
+
   {
     title: "Business Intelligence",
     skills: [
-      "DAX",
-      "Power Query",
-      "Data Modeling",
       "Dashboard Development",
+      "Data Visualization",
+      "Power Query",
+      "DAX",
     ],
   },
+
+  {
+    title: "Database",
+    skills: [
+      "MySQL",
+      "RDBMS",
+      "Database Design",
+      "CRUD Operations",
+    ],
+  },
+
   {
     title: "Business Analysis",
     skills: [
-      "Requirement Gathering",
       "Market Research",
-      "KPI Reporting",
+      "Competitor Analysis",
+      "Business Insights",
       "Documentation",
     ],
   },
+
   {
-    title: "Tools",
+    title: "Reporting & Analytics",
     skills: [
-      "Power BI",
-      "Excel",
+      "KPI Tracking",
+      "Performance Reporting",
+      "Data Validation",
+      "Data Cleaning",
+    ],
+  },
+
+  {
+    title: "Tools & Platforms",
+    skills: [
       "GitHub",
-      "Google Sheets",
-      "MS Office",
+      "Jupyter Notebook",
+      "VS Code",
+      "Microsoft Office",
     ],
   },
 ];
@@ -41,46 +66,48 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen flex items-center justify-center px-8"
+      className="min-h-screen px-8 py-24"
     >
-      <motion.div
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-7xl w-full"
-      >
-        <p className="text-cyan-400 mb-2">02</p>
+      <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-6xl font-bold mb-12">
-          TECHNICAL SKILLS
+        <p className="text-cyan-400 mb-2">
+          02
+        </p>
+
+        <h2 className="text-6xl font-bold mb-16">
+          SKILLS & TECHNOLOGIES
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-          {skillGroups.map((group, index) => (
+          {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-slate-900/50 border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400 transition"
+              className="bg-slate-900/50 border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
             >
-              <h3 className="text-2xl font-bold mb-6 text-cyan-400">
-                {group.title}
+              <h3 className="text-2xl font-bold mb-6">
+                {category.title}
               </h3>
 
               <div className="flex flex-wrap gap-3">
-                {group.skills.map((skill, idx) => (
+
+                {category.skills.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10"
+                    className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300"
                   >
                     {skill}
                   </span>
                 ))}
+
               </div>
+
             </div>
           ))}
 
         </div>
-      </motion.div>
+
+      </div>
     </section>
   );
 }
