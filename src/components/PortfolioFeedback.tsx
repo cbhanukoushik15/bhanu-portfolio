@@ -43,7 +43,21 @@ export default function PortfolioFeedback() {
           }),
         }
       );
-
+await fetch(
+  "/api/feedback-notify",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type":
+        "application/json"
+    },
+    body: JSON.stringify({
+      name,
+      rating,
+      feedback
+    })
+  }
+);
       setSubmitted(true);
 
       localStorage.setItem(
