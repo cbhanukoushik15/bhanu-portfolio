@@ -17,7 +17,7 @@ export default function PortfolioFeedback() {
     if (!popupShown) {
       const timer = setTimeout(() => {
         setShow(true);
-      }, 10000);
+      }, 5000);
 
       return () => clearTimeout(timer);
     }
