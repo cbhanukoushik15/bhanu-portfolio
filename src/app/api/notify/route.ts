@@ -5,7 +5,7 @@ export async function POST() {
     "https://ntfy.sh/bhanu-portfolio-visits-2026",
     {
       method: "POST",
-      body: "🔔 Portfolio opened",
+      body: "🔔 Someone opened your portfolio website",
     }
   );
 
