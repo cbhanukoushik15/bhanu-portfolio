@@ -8,10 +8,12 @@ import Contact from "@/components/Contact";
 import Numbers from "@/components/Achievements";
 import Certifications from "@/components/Certifications";
 import SmoothScroll from "@/components/SmoothScroll";
+import VisitorTracker from "@/components/VisitorTracker";
 export default function Home() {
   return (
     <main className="bg-[#030712] min-h-screen text-white">
-  <SmoothScroll />
+      <VisitorTracker />
+      <SmoothScroll />
       <Navbar />
       <Hero />
       <About />
