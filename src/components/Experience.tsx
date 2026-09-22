@@ -18,6 +18,54 @@ export default function Experience() {
 
         <div className="relative border-l-2 border-cyan-500/30 ml-4 space-y-16">
 
+          {/* Unisys */}
+
+          <div className="relative pl-12">
+
+            <div className="absolute -left-[11px] top-2 w-5 h-5 rounded-full bg-cyan-400 shadow-lg shadow-cyan-400"></div>
+
+            <div className="bg-slate-900/50 border border-cyan-500/20 rounded-3xl p-8 hover:border-cyan-400 transition">
+
+              <span className="text-cyan-400 font-semibold">
+                September 2026 – Present
+              </span>
+
+              <h3 className="text-3xl font-bold mt-3">
+                Associate Technical Service Desk
+              </h3>
+
+              <p className="text-cyan-400 mt-2 text-lg">
+                Unisys India Pvt. Ltd. | Hyderabad · Full-time
+              </p>
+
+              <ul className="mt-6 space-y-3 text-gray-400">
+
+                <li>
+                  • IT support and troubleshooting
+                </li>
+
+                <li>
+                  • Service desk operations
+                </li>
+
+                <li>
+                  • Incident and request management
+                </li>
+
+                <li>
+                  • Hardware and software troubleshooting
+                </li>
+
+                <li>
+                  • End-user/customer support
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
           {/* Infotact */}
 
           <div className="relative pl-12">

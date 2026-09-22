@@ -10,6 +10,7 @@ import Certifications from "@/components/Certifications";
 import SmoothScroll from "@/components/SmoothScroll";
 import VisitorTracker from "@/components/VisitorTracker";
 import PortfolioFeedback from "@/components/PortfolioFeedback";
+import ScrollToTop from "@/components/ScrollToTop";
 export default function Home() {
   return (
     <main className="bg-[#030712] min-h-screen text-white">
@@ -25,6 +26,7 @@ export default function Home() {
       <Certifications />
       <Contact />
       <PortfolioFeedback />
+      <ScrollToTop />
     </main>
   );
 }
